@@ -43,7 +43,7 @@ class PaymentController {
         $provinceRepository = new ProvinceRepository();
 		$province = $provinceRepository->find($_POST["province"]);
         $shipping_fee = $province->getShippingFee();
-        $data = [] ;//later
+        $data = [] ;
         $data["created_date"] = date("Y-m-d H:i:s"); 
 		$data["order_status_id"] = 1;//Đã đặt hàng
 		$data["staff_id"] = null;
@@ -61,7 +61,7 @@ class PaymentController {
             //Lưu các đơn hàng chi tiết
             $items = $cart->getItems();
             foreach($items as $item) {
-                $dataItem = [];//later
+                $dataItem = [];
                 $dataItem["product_id"] = $item["product_id"]; 
                 $dataItem["order_id"] = $orderId; 
                 $dataItem["qty"] = $item["qty"]; 

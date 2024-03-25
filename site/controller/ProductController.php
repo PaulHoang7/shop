@@ -125,7 +125,6 @@ class ProductController {
         $commentRepository = new CommentRepository();
         $commentRepository->save($data);
 
-        //Lấy lại danh sách comment bao gồm cả comment mới lưu vào database
         $productRepository = new ProductRepository();
         $product = $productRepository->find($_POST["product_id"]);
         $comments = $product->getComments();

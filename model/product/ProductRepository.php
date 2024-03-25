@@ -22,7 +22,6 @@ class ProductRepository extends BaseRepository{
 			$sql .= " $limit";
 			//SELECT * FROM view_product WHERE name LIKE '%abc%'  AND create_date='2020-08-07' ORDER BY name asc, created_date desc LIMIT 20, 10
 		}
-		// echo $sql;
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) 
@@ -140,7 +139,7 @@ class ProductRepository extends BaseRepository{
 		description, featured, category_id, brand_id) 
 		VALUES ('$name', '$barcode', '$sku' ,$price, '$discount_percentage', '$discount_from_date', '$discount_to_date',  '$featured_image', '$inventory_qty', '$created_date', '$description', '$featured', $category_id, $brand_id)";
 		if ($conn->query($sql) === TRUE) {
-			$last_id = $conn->insert_id;//chỉ cho auto increment
+			$last_id = $conn->insert_id;
 		    return $last_id;
 		} 
 		$this->error =  "Error: " . $sql . PHP_EOL . $conn->error;

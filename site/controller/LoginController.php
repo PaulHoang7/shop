@@ -9,8 +9,6 @@ class LoginController {
         if ($customer) {
             $encodePassword = $customer->getPassword();
             if(password_verify($password, $encodePassword)) {
-                //đúng mật khẩu
-                //account đã active
                 if ($customer->getIsActive()) {
                     $_SESSION["success"] = "Đăng nhập thành công";
                     $_SESSION["email"] = $email;
