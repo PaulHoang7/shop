@@ -7,7 +7,7 @@ class MailService {
 
         //Create an instance; passing `true` enables exceptions
         $mail = new PHPMailer(true);
-        $mail->CharSet = 'UTF-8';//fix tiếng việt
+        $mail->CharSet = 'UTF-8';
         try {
             //Server settings
             $mail->SMTPDebug = 0;                      //Enable verbose debug output
