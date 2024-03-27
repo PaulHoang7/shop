@@ -13,5 +13,4 @@
 // require "controller/" . $controllerName . ".php";
 // $controller = new $controllerName();//new StudentController();
 // $controller->$a();//$controller->list();
-//Keep silent
 ?>

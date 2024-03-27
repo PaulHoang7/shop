@@ -102,7 +102,7 @@ class AuthController {
 			exit;
 		}
 		
-		// Logged in
+
 
 		// The OAuth 2.0 client handler helps us manage access tokens
 		$oAuth2Client = $fb->getOAuth2Client();
