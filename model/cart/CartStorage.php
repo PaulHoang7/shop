@@ -23,7 +23,7 @@ class CartStorage {
 	function clear() {
 		session_id() || session_start();
 		unset($_SESSION["cart"]);
-		setcookie("cart", null,  time()-24*60*60);//keep one day
+		setcookie("cart", null,  time()-24*60*60);
 	}
 }
  ?>

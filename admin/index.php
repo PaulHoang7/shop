@@ -10,7 +10,6 @@
 		include "checkLogin.php";
 		//Đã login
 	}
-	//Check ACL
 	if (!empty($_SESSION["username"])) {
 		$aclService = new AclService();
 		$staffRepository = new StaffRepository();
