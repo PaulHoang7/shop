@@ -13,7 +13,7 @@ function deleteObject(self, url, id_name, event, confirm_message) {
     })
     .done(function(data) {
         var rs = JSON.parse(data);
-        var can_delete = rs.can_delete;//data chứa 0 hoặc 1
+        var can_delete = rs.can_delete;
         if (can_delete == 1) {
             var href = $(self).attr("href");
             window.location.href = href;

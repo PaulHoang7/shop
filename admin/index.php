@@ -20,7 +20,6 @@
 			exit;
 		}
 	}
-	// var_dump($_SESSION);
 	$classController = ucfirst($c)."Controller";
 	$controller = new $classController();
 	$controller->$a();

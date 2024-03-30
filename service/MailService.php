@@ -24,7 +24,7 @@ class MailService {
             $mail->addAddress($to);     //Add a recipient
 
             //Content
-            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->isHTML(true);                                  
             $mail->Subject = $subject;
             $mail->Body    = $content;
 

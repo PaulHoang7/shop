@@ -55,7 +55,7 @@ class CommentRepository extends BaseRepository{
 		fullname, star, created_date,
 		description, product_id) VALUES ('$email', '$fullname', '$star', '$created_date', '$description', $product_id)";
 		if ($conn->query($sql) === TRUE) {
-			$last_id = $conn->insert_id;//chỉ cho auto increment
+			$last_id = $conn->insert_id;
 		    return $last_id;
 		} 
 		$this->error = "Error: " . $sql . PHP_EOL . $conn->error;

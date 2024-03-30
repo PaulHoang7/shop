@@ -23,7 +23,6 @@
       </form>
       <!-- /form -->
    </div>
-   <!-- /.container-fluid -->
 
 </div>
 <?php include "layout/footer.php" ?>
