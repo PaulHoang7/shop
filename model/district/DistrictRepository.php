@@ -25,7 +25,7 @@ class DistrictRepository {
 			}
 		}
 
-		return $districts; // This is array 
+		return $districts; 
 	}
 
 	function getAll() {

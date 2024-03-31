@@ -69,7 +69,7 @@ class CustomerRepository extends BaseRepository{
 
 		$sql = "INSERT INTO customer (name, password, mobile, email, login_by, shipping_name, shipping_mobile, ward_id, housenumber_street, is_active) VALUES ('$name', '$password', '$mobile', '$email', '$login_by','$shipping_name', '$shipping_mobile' ,$ward_id, '$housenumber_street', $is_active)";
 		if ($conn->query($sql) === TRUE) {
-			$last_id = $conn->insert_id;//chỉ cho auto increment
+			$last_id = $conn->insert_id;
 		    return $last_id;
 		} 
 		$this->error =  "Error: " . $sql . PHP_EOL . $conn->error;

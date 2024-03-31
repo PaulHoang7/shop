@@ -15,7 +15,6 @@
                 <?php 
                 $items = $cart->getItems();
                 foreach ($items as $item):
-                // var_dump($item);
                 ?>
                 <div class="row">
                     <div class="col-xs-2">

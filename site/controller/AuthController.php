@@ -129,7 +129,6 @@ class AuthController {
 		  	var_dump($accessToken->getValue());
 		}
 
-		// $_SESSION['fb_access_token'] = (string) $accessToken;
 
 		// User is logged in with a long-lived access token.
 		// You can redirect them to a members-only page.

@@ -41,7 +41,7 @@ class CategoryRepository extends BaseRepository{
 		$name = $data["name"];
 		$sql = "INSERT INTO category (name) VALUES ('$name')";
 		if ($conn->query($sql) === TRUE) {
-			$last_id = $conn->insert_id;//chỉ cho auto increment
+			$last_id = $conn->insert_id;
 		    return $last_id;
 		} 
 		$this->error = "Error: " . $sql . PHP_EOL . $conn->error;

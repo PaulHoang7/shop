@@ -3,7 +3,7 @@ class CartStorage {
 	function store($cart) {
 		//serialize: chuyền object to string
 		$_SESSION["cart"] = serialize($cart);
-		setcookie("cart", serialize($cart),  time()+24*60*60);//keep one day
+		setcookie("cart", serialize($cart),  time()+24*60*60);
 	}
 
 	function fetch() {

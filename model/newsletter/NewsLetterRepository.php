@@ -23,7 +23,7 @@ class NewsLetterRepository {
 			}
 		}
 
-		return $newsletters; // This is array 
+		return $newsletters; 
 	}
 
 	function getAll() {
