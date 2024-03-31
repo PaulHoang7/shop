@@ -8,7 +8,6 @@ class ProductController {
         $conds = [];
         $sorts = [];
         $categoryName = "Tất cả sản phẩm";
-        //toán tử 3 ngôi thông thường
         // $category_id = !empty($_GET["category_id"]) ? $_GET["category_id"] : null;
 
         //toán tử 3 ngôi rút gọn

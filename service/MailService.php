@@ -21,7 +21,7 @@ class MailService {
 
             //Recipients
             $mail->setFrom(SMTP_USERNAME);
-            $mail->addAddress($to);     //Add a recipient
+            $mail->addAddress($to);   
 
             //Content
             $mail->isHTML(true);                                  

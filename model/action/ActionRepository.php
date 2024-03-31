@@ -22,7 +22,7 @@ class ActionRepository extends BaseRepository{
 			}
 		}
 
-		return $actions; // This is array 
+		return $actions; 
 	}
 
 	function getAll() {

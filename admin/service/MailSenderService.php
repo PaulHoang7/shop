@@ -21,7 +21,7 @@ class MailSenderService {
 
 		    //Recipients
 		    $mail->setFrom($from_email, $from_name);
-		    $mail->addAddress($to_email, $to_name);     // Add a recipient            // Name is optional
+		    $mail->addAddress($to_email, $to_name);     // Add a recipient            
 		    $mail->addReplyTo($from_email, $from_name);
 
 		    // Content

@@ -40,7 +40,6 @@ $router->map('GET', '/danh-muc/[*:slugName]-[i:categoryId]', function($slugName,
 }, 'category');
 
 // khoảng giá
-// khoang-gia/200000-300000
 $router->map('GET', '/khoang-gia/[*:priceRange]', function($priceRange) {
 	$_GET["price-range"] = $priceRange;
   	call_user_func_array(["ProductController", "index"],[]);

@@ -10,7 +10,7 @@ class AuthController {
 			//check active or not
 			
 			if ($staff->getIsActive()==0) {
-				//Login thất bại. Về login.php
+				//Login thất bại
 				$_SESSION["error"] = "Tài khoản bị vô hiệu hóa. Vui lòng liên hệ người quản trị";
 				header("location:login.php");
 				exit;

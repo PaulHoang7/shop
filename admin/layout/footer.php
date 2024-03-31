@@ -4,7 +4,7 @@
                <span>Copyright © Thầy Lộc 2017</span>
             </div>
          </div>
-      </footer>      <!-- Scroll to Top Button-->
+      </footer>      
       <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
       </a>
